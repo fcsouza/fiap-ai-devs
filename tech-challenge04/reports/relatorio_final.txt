@@ -1,0 +1,8 @@
+==== Relatório Técnico ====
+Total de frames analisados: 3326
+Atividades detectadas: {'Other': 1435, 'Reading': 914, 'Walking': 1675, 'Gesturing': 774, 'Unknown': 842, 'Conversation': 1}
+Emoções detectadas: {(0, 'sad'): 789, (1, 'neutral'): 247, (2, 'fear'): 240, (3, 'angry'): 102, (1, 'fear'): 252, (2, 'neutral'): 112, (3, 'fear'): 109, (3, 'sad'): 139, (3, 'neutral'): 18, (1, 'sad'): 232, (0, 'neutral'): 389, (2, 'sad'): 144, (0, 'fear'): 442, (2, 'angry'): 19, (1, 'happy'): 47, (0, 'happy'): 738, (1, 'surprise'): 33, (0, 'angry'): 183, (0, 'surprise'): 156, (0, 'disgust'): 1, 'Happiness': 3, (1, 'angry'): 10, (3, 'happy'): 11, (4, 'fear'): 39, (4, 'sad'): 2, (4, 'neutral'): 12, (2, 'happy'): 24, (2, 'surprise'): 2}
+Número de anomalias detectadas: 842
+
+==== Resumo Natural ====
+Facial recognition technology works in our daily lives. In this video, we delve into the fascinating world of video analysis for facial recognition and activities. What's truly captivating is the range of emotional expressions on display,  from genuine smiles that radiate happiness to widened eyes that betray surprise. This video not only showcases the capabilities of facial recognition technology, but also serves as a visual ode to the vibrant mosaic of human interactions.

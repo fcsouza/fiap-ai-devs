@@ -7,6 +7,5 @@ def analyze_emotions(frame, faces):
         result = DeepFace.analyze(face_img, actions=['emotion'], enforce_detection=False)
         if isinstance(result, list):
             result = result[0]
-        print("Emoção detectada:", result['dominant_emotion'])
         emotions.append(result['dominant_emotion'])
     return emotions

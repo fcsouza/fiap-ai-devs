@@ -1,6 +1,19 @@
 from moviepy.video.io.VideoFileClip import VideoFileClip
 import speech_recognition as sr
-import os
+import whisper
+import json
+
+model = whisper.load_model("base")  # ou "tiny" para mais rápido
+
+def transcribe_with_timestamps(audio_path):
+    result = model.transcribe(audio_path)
+    for segment in result["segments"]:
+        print(f"{segment['start']:.2f} - {segment['end']:.2f}: {segment['text']}")
+    return result
+
+def save_transcription_json(result, output_path):
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(result["segments"], f, indent=4, ensure_ascii=False)
 
 def extract_audio_from_video(video_path, audio_path):
     video = VideoFileClip(video_path)
@@ -13,7 +26,6 @@ def transcribe_audio_to_text(audio_path, text_output_path):
         try:
             # Usa o serviço de reconhecimento de fala do Google com configuração para português do Brasil
             text = recognizer.recognize_google(audio, language="en-US")
-            print("Transcrição: " + text)
             # Salva a transcrição em um arquivo de texto
             with open(text_output_path, 'w', encoding='utf-8') as file:
                 file.write(text)
