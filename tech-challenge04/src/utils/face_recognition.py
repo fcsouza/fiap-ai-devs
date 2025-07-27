@@ -1,11 +1,6 @@
 from deepface import DeepFace
 
-class FaceDetector:
-    def __init__(self):
-        pass
-
-    def detect(
-        self,
+def detect_faces(
         frame,
         actions=['emotion', 'age', 'gender'],
         enforce_detection=True,
