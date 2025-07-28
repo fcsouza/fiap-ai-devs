@@ -185,9 +185,8 @@ def process_video(video_path, transcription_path):
             analyze_transcription(transcribed_text, activities_count, emotion_count)
             last_text = transcribed_text  # Atualiza o último texto analisado
        
-        cv2.putText(frame, f"{last_text}", (10, 3cv2.putText(frame, f"{last_text}", (10, 30),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 1)0),
-            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 1)
+        cv2.putText(frame, last_text, (10, 30),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 1)
 
         # Display the processed frame
         cv2.imshow('Video Preview', frame)
