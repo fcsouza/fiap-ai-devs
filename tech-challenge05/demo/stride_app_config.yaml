@@ -1,0 +1,24 @@
+yolo:
+  model_path: "demo/models/best.pt"
+  data_yaml: "demo/data.yaml"       
+  imgsz: 832
+  conf: 0.35
+  iou: 0.60
+  provider_filter: "Todos"     
+ocr:
+  lang: "eng"                  
+  min_conf: 70                 
+  min_len: 3                  
+  stopwords: ["the","and","api","rest","soap","http"]
+  dedupe_sim: 0.90             
+  join_nearby_px: 16           
+stride:
+  llm_model: "llama3"          
+  temperature: 0.0
+  top_p: 0.1
+  max_texts: 40                
+  max_icons: 80                
+report:
+  logo_path: null              
+  author: "STRIDE Analyzer"
+  title: "Relatório STRIDE"

@@ -1,0 +1,12 @@
+names:
+  - text_label
+  - connector
+  # add your services below; keep IDs stable once you start training
+  - aws_ec2
+  - aws_lambda
+  - aws_s3
+  - azure_function
+  - azure_storage
+  - gcp_compute_engine
+  - gcp_cloud_functions
+  - gcp_cloud_storage

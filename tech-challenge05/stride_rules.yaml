@@ -1,0 +1,10 @@
+# Minimal example. Extend with your full catalog.
+service_rules:
+  aws_ec2: [Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege]
+  aws_s3: [Information Disclosure, Tampering]
+  aws_lambda: [Tampering, Denial of Service]
+  azure_function: [Tampering, Denial of Service]
+  gcp_cloud_functions: [Tampering, Denial of Service]
+  gcp_cloud_storage: [Information Disclosure, Tampering]
+  connector: []
+  text_label: []
